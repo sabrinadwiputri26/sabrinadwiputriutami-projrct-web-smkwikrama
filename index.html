@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Wikrama</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">Wikrama</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="jurusan.html">Jurusan</a></li>
+                <li><a href="perpustakaan.html">Perpustakaan</a></li>
+                <li><a href="greenroof.html">Green Roof</a></li>
+
+             
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner"><p class="selamat">Welcome To SMK Wikrama Bogor!</p></div>
+
+    <footer class="footer-main">
+        <div class="footer-grid">
+            <section class="footer-1">
+                <h4>Tentang Wikrama</h4>
+                <ul class="links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="sejarah.html">Sejarah</a></li>
+                    <li><a href="jurusan.html">Jurusan</a></li>
+                    <li><a href="perpustakaan.html">Perpustakaan</a></li>
+                    <li><a href="greenroof.html">Green Roof</a></li>
+                </ul>
+              </section>
+             <section class="footer-2">
+                <h4>Alamat</h4>
+                <ul class="links">
+                <li class="listlinks"><p>Jl. Raya Wangun
+                    Kelurahan Sindangsari
+                    Bogor Timur 16720</p></li>
+                </ul>
+                <ul class="links">
+                <h4>Telepon</h4>
+                <li class="listlinks"><p>0251-8242411 / 082221718035 (Whatsapp)</p></li>
+                </ul>
+              </section>
+             <section class="footer-3">
+               <h4>Sosial Media</h4>
+               <ul class="links">  
+                 <li class="listlinks"><i class="fab fa-youtube fa-lg"></i><a href="https://www.youtube.com/channel/UCyhEUzlXbXet57qFnDfdWuw" target="_blank">Multimedia Wikrama</a></li>
+                 <li class="listlinks"><i class="fab fa-instagram fa-lg"></i><a href="https://www.instagram.com/smkwikrama/" target="_blank">smkwikrama</a></li>
+                 <li class="listlinks"><i class="fab fa-twitter-square fa-lg"></i><a href="https://twitter.com/smkwikrama" target="_blank">SMK Wikrama</a></li>
+                 <li class="listlinks"><i class="fab fa-facebook-square fa-lg"></i><a href="https://www.facebook.com/smkwikrama/" target="_blank">SMK Wikrama Bogor</a></li>
+                </ul>
+             </section>
+             <section class="footer-4">
+                <h4>My Social and Contact</h4>
+                <ul class="links">
+                  <li class="listlinks"><a href="https://www.instagram.com/invites/contact/?i " target="_blank">Instagram</a></li>
+                
+                  <li class="listlinks"><a href="mailto:sabrinadpu@gmail.com" target="_blank">sabrinadpu@gmail.com</a></li>
+                  
+                </ul>
+              </section>
+        </div>
+    </footer>
+   
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabled");
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+</body>
+</html>

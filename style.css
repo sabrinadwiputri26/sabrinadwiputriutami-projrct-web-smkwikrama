@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background: #0d0e2c;
+}
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu-list{
+    display: inline-flex;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.menu-list li a{
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover{
+    color: rgb(92, 98, 104);
+}
+
+.banner{
+    height: 100vh;
+    background: url(banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sejarah {
+    padding: 40px 0;
+}
+
+.sejarah .title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sejarah p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon{
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Badan */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 2px rgb(20, 19, 19);
+}
+
+.selamat{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.banner .selamat:hover{
+    font-size: 35px;
+}
+
+.title{
+    color: rgb(26, 25, 25);
+}
+
+.pencapaian{
+    color: rgb(34, 33, 33);
+}
+
+.sjrh{
+    margin-bottom: 10px;
+}
+
+.achiv-list{
+    list-style: square;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+}
+
+.achlist{
+    margin-top: 20px;
+}
+
+.thn-achv{
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.container{
+    background: rgb(184, 179, 167);
+    width: auto;
+}
+
+.footer-main{
+    width: 100%;
+    height: 265px;
+    color: white;
+    background: rgb(54, 54, 54);
+    border-top: 6px solid rgb(16, 48, 87);
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 50px 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 24px 60px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.footer-end{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    background: rgb(14, 13, 13);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.links{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(11, 60, 124);
+    margin-left: 5px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.listlinks{
+    margin-top: 7px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 0 50px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryy{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 40vw);
+    grid-gap: 15px;
+    margin: 0 50px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+
+.galleryyy_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryyy{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+    margin: 0 50px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+
+.galleryy_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-in-jurusan{
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.listinjrsn{
+    list-style: square;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+}
+.list-in-jurusan-pagee{
+    margin-top: 20px;
+}
+.list-in-jurusan-page{
+    margin-top: 8px;
+}
+
+/* Fasilitas Page */
+
+.galleryyyy{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.galleryyyy_img{
+    width: 100%;
+    height: 100%;
+}
+.titlee{
+    color: rgb(39, 39, 39);
+    text-align: center;
+
+}
+.sejarah .titlee{
+    font-size: 35px;
+    font-weight: 700;
+}
+.titleee{
+    color: rgb(29, 29, 29);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -55px;
+}
+.sejarah .titleee{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.perpus a{
+    color: rgb(5, 64, 141);
+    margin-left: 5px;
+}
+
+.perpus a:hover{
+    text-decoration: underline;
+}
+
+.galleryyyyy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 0 10px;
+    margin-top: 90px;
+    justify-items: center;
+}
+
+.galleryyyyy_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_item--3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+
+.galleryz{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+    margin: 0 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+
+.galleryz_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryzz{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.galleryzz_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titlez{
+    color: rgb(53, 53, 53);
+    text-align: center;
+    margin-top: 50px;
+}
+.sejarah .titlez{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.galleryx{
+    display: flex;
+    height: 330px;
+    width: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galleryx_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: right;
+}
+
+@media (max-width : 860px) {
+    body.disabled{
+        overflow: hidden;
+    }    
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+        right: 0%;
+    }
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+        font-size: 23px;
+        margin-right: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a{
+        margin-right: 0px;
+    }
+
+    .banner{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .banner .selamat:hover{
+        font-size: 23px;
+    }
+
+    .footer-main{
+        width: 100%;
+        height: auto;
+        color: white;
+        background: rgb(22, 22, 22);
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        padding: 24px 35px;
+        justify-content: start;
+    }
+    
+    .sejarah .title{
+        font-size: 26px;
+    }
+
+    .gallery{
+        margin: 0 30px;
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+
+    .galleryyy{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+
+    .galleryz{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin: 0 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-items: center;
+    }
+
+    .sejarah .titlez{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
